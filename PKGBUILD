@@ -89,6 +89,7 @@ prepare() {
 }
 
 build() {
+  export LC_ALL="C"
   cd "$_pkgname"
   echo -e "${_prefix}Building Ghidra"
   gradle --parallel buildGhidra -x ip
