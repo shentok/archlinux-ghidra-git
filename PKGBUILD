@@ -5,7 +5,7 @@
 # Contributor: nullableVoidPtr <nullableVoidPtr _ gmail _ com>
 
 pkgname=ghidra-git
-pkgver=10.2.3.r655.601ab94c1
+pkgver=10.4.r370.ba30f4b0b
 pkgrel=1
 pkgdesc='Software reverse engineering framework (git)'
 arch=('x86_64' 'aarch64')
@@ -30,16 +30,14 @@ makedepends=(
   'unzip'
 )
 source=(
-  "git+https://github.com/NationalSecurityAgency/ghidra"
   'ghidra.desktop'
   'ghidra-root.desktop'
   'ghidra.policy'
 )
-sha512sums=('SKIP'
-            'a85b8b3276e2ff4ed8bda6470c15d02711ebaa48463c775cd2a36549fad738e9fe073dab80f8c57646490ffc959cdc27e9d25b1dc2a5810b0ddb249b5dc99a9b'
+sha512sums=('a85b8b3276e2ff4ed8bda6470c15d02711ebaa48463c775cd2a36549fad738e9fe073dab80f8c57646490ffc959cdc27e9d25b1dc2a5810b0ddb249b5dc99a9b'
             'c717029cf31860e27b5563c3ff4b2740d4b1997bc50481214e24c38f12d9acbfa9ca2cbfe594d43071fbf8420ac8f022119c2c23ddef0c717d96860e22eb35c3'
             '0a35f58b1820ac65ce37d09b0a6904ab7018c773c73ecd29bcfda37cbd27f34af868585084b5cd408b1066b7956df043cb1573a1e3d890e173be737d2de51401')
-_pkgname="${pkgname/-git/}"
+_pkgname="${src}"
 _stop='\e[m'
 _color="\e[33m"
 _bold='\e[1m'
